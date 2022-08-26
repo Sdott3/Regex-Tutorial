@@ -1,6 +1,6 @@
-# Title (replace with your title)
+# Regex for a matching Url
 
-Introductory paragraph (replace this with your text)
+Regular expressions (regex for short) are special text strings that are used for searching text. This tutorial explains regex used for a matching URL.
 
 ## Summary
 
