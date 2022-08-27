@@ -10,15 +10,13 @@ The following regular expression can be used to verify that user input is a vali
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+
 
 ## Regex Components
 
@@ -45,7 +43,6 @@ Example for matching URL:
 * [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence * [a-z\.]
 * [\/\w \.-]*     Matches '/', '.', '-', 'www', '//'
 
-### OR Operator
 
 ### Character Classes
 A character class, also called “character set”, defines a set of characters. You can tell the regex engine to match only one out of several characters. It ensures that a given sequence of characters matches a Larger set of characters. 
@@ -54,7 +51,6 @@ A character class, also called “character set”, defines a set of characters.
     \w             Matches a word
     \d             Matches a single character that is a digit
     .              Matches any character
-### Flags
 
 ### Grouping and Capturing
 Grouping Constructs are used check multiple parts or sections of a string for different requirements. By using parentheses (()) around different sections of the regex.
@@ -80,7 +76,6 @@ Lazy means match shortest possible string.
 
 * ([\da-z\.-]+)       The "+" operator is greedy as it allows character matching from one to an infinite amount of times.
 
-### Boundaries
 
 ### Back-references
 Back-references provide a way to identify a repeated character or substring within a string. 
@@ -88,8 +83,6 @@ Back-references provide a way to identify a repeated character or substring with
 Pattern	Description
 * (?<1>a)	Match the character "a" and assign the result to the capturing group named 1.
 * (?<1>\1b)*	Match zero or more occurrences of the group named 1 along with a "b", and assign the result to the capturing group named 1.
-
-### Look-ahead and Look-behind
 
 ## Author
 
