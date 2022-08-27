@@ -57,6 +57,13 @@ A character class, also called “character set”, defines a set of characters.
 ### Flags
 
 ### Grouping and Capturing
+Grouping Constructs are used check multiple parts or sections of a string for different requirements. By using parentheses (()) around different sections of the regex.
+
+
+*    (https?:\/\/)       Matches: ' ', 'https://', 'http://'
+*   ([\da-z\.-]+)       Matches: 'ab.c-7', 'ab'
+*   ([a-z\.]{2,6})      Matches: 'ab.', '.ca'
+*   ([\/\w \.-]*)       Matches: '/', '/ab.'
 
 ### Bracket Expressions
 A bracket expression (an expression enclosed in square brackets, "[]" ). 
