@@ -40,18 +40,10 @@ Quantifiers specify how many times a character, group, or character class must b
     * {n,m} and {n,m}? Matches from n to m times.
 
 Example or matching URL:
-<<<<<<< HEAD
     * https?          Matches 'https', 'http'
     * [\da-z\.-]+     Matches a single digit, group of letters (a-z), dot (.) or hyphen (-) 1 or more times
     * [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence * [a-z\.]
     * [\/\w \.-]*     Matches '/', '.', '-', 'www', '//'
-
-=======
-
-    https?          Matches 'https', 'http'
-    [\da-z\.-]+     Matches a single digit, group of letters (a-z), dot (.) or hyphen (-) 1 or more times
-    [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence [a-z\.]
-    [\/\w \.-]*     Matches '/', '.', '-', 'www', '//'
 
 ### OR Operator
 
@@ -62,6 +54,12 @@ Example or matching URL:
 ### Grouping and Capturing
 
 ### Bracket Expressions
+A bracket expression (an expression enclosed in square brackets, "[]" ). 
+
+Bracket Expression examples:
+* [\da-z\.-]
+* [a-z\.]
+* [\/\w \.-]
 
 ### Greedy and Lazy Match
 
