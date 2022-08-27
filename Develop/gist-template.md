@@ -25,8 +25,8 @@ The following regular expression can be used to verify that user input is a vali
 ### Anchors
 Anchors do not match any character. They match a position before or after characters.
 
- ^ – The caret anchor matches the beginning of the text.
- $ – The dollar anchor matches the end of the text.
+* ^ – The caret anchor matches the beginning of the text.
+* $ – The dollar anchor matches the end of the text.
 
 Anchors assert that the engine's current position in the string matches a location. This is useful because, it is expressive: it lets you specify that you want to match digits at the end of a line, but not anywhere else. When you tell the engine that you want to find a pattern at a given location, it doesn't have to spend time trying to find that pattern at many other locations.
 
@@ -40,6 +40,7 @@ Quantifiers specify how many times a character, group, or character class must b
     {n,m} and {n,m}? Matches from n to m times.
 
 Example or matching URL:
+
     https?          Matches 'https', 'http'
     [\da-z\.-]+     Matches a single digit, group of letters (a-z), dot (.) or hyphen (-) 1 or more times
     [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence [a-z\.]
