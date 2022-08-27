@@ -71,4 +71,4 @@ Bracket Expression examples:
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Shatyana Thomas a current student at UofM's Full-Stack Coding BootCamp. https://github.com/sdott3 
