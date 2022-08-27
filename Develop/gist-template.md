@@ -78,6 +78,11 @@ For example, the greedy h.+l matches 'hell' in 'hello' but the lazy h.+?l matche
 ### Boundaries
 
 ### Back-references
+Back-references provide a way to identify a repeated character or substring within a string. 
+
+Pattern	Description
+* (?<1>a)	Match the character "a" and assign the result to the capturing group named 1.
+* (?<1>\1b)*	Match zero or more occurrences of the group named 1 along with a "b", and assign the result to the capturing group named 1.
 
 ### Look-ahead and Look-behind
 
