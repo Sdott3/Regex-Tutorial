@@ -32,18 +32,18 @@ Anchors assert that the engine's current position in the string matches a locati
 
 ### Quantifiers
 Quantifiers specify how many times a character, group, or character class must be present in the input for a match to be found.
-    * * and *? Matches Zero or more times.
-    * + and +? Matches One or more times.
-    * ? and ?? Matches Zero or One times.
-    * {n} and {n}? Matches exactly n times.
-    * {n,} and {n,}? Matches atleast n times.
-    * {n,m} and {n,m}? Matches from n to m times.
+* * and *? Matches Zero or more times.
+* + and +? Matches One or more times.
+* ? and ?? Matches Zero or One times.
+* {n} and {n}? Matches exactly n times.
+* {n,} and {n,}? Matches atleast n times.
+* {n,m} and {n,m}? Matches from n to m times.
 
 Example for matching URL:
-    * https?          Matches 'https', 'http'
-    * [\da-z\.-]+     Matches a single digit, group of letters (a-z), dot (.) or hyphen (-) 1 or more times
-    * [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence * [a-z\.]
-    * [\/\w \.-]*     Matches '/', '.', '-', 'www', '//'
+* https?          Matches 'https', 'http'
+* [\da-z\.-]+     Matches a single digit, group of letters (a-z), dot (.) or hyphen (-) 1 or more times
+* [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence * [a-z\.]
+* [\/\w \.-]*     Matches '/', '.', '-', 'www', '//'
 
 ### OR Operator
 
@@ -78,9 +78,7 @@ Greedy means match longest possible string.
 
 Lazy means match shortest possible string.
 
-For example, the greedy h.+l matches 'hell' in 'hello' but the lazy h.+?l matches 'hel'.
-
-([\da-z\.-]+)       The "+" operator is greedy as it allows character matching from one to an infinite amount of times.
+* ([\da-z\.-]+)       The "+" operator is greedy as it allows character matching from one to an infinite amount of times.
 
 ### Boundaries
 
