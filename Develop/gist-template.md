@@ -39,7 +39,7 @@ Quantifiers specify how many times a character, group, or character class must b
     * {n,} and {n,}? Matches atleast n times.
     * {n,m} and {n,m}? Matches from n to m times.
 
-Example or matching URL:
+Example for matching URL:
     * https?          Matches 'https', 'http'
     * [\da-z\.-]+     Matches a single digit, group of letters (a-z), dot (.) or hyphen (-) 1 or more times
     * [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence * [a-z\.]
@@ -48,7 +48,12 @@ Example or matching URL:
 ### OR Operator
 
 ### Character Classes
+A character class, also called “character set”, defines a set of characters. You can tell the regex engine to match only one out of several characters. It ensures that a given sequence of characters matches a Larger set of characters. 
 
+    [a-z]          Matches lowercase alphabetic characters between a and z
+    \w             Matches a word
+    \d             Matches a single character that is a digit
+    .              Matches any character
 ### Flags
 
 ### Grouping and Capturing
@@ -62,6 +67,13 @@ Bracket Expression examples:
 * [\/\w \.-]
 
 ### Greedy and Lazy Match
+Greedy means match longest possible string.
+
+Lazy means match shortest possible string.
+
+For example, the greedy h.+l matches 'hell' in 'hello' but the lazy h.+?l matches 'hel'.
+
+([\da-z\.-]+)       The "+" operator is greedy as it allows character matching from one to an infinite amount of times.
 
 ### Boundaries
 
