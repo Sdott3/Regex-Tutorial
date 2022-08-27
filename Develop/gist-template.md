@@ -52,8 +52,7 @@ Example or matching URL:
     [\da-z\.-]+     Matches a single digit, group of letters (a-z), dot (.) or hyphen (-) 1 or more times
     [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence [a-z\.]
     [\/\w \.-]*     Matches '/', '.', '-', 'www', '//'
-    
->>>>>>> 325dad584eb2a2bd85407551d95a4653f1a304b9
+
 ### OR Operator
 
 ### Character Classes
